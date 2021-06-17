@@ -1,7 +1,5 @@
 import React, { Suspense } from 'react';
 import './App.css';
-import Spinner from './Spinner'
-import Data from './Data'
 
 function App() {
   const AboutUs = React.lazy(() => import('./AboutUs'))
@@ -16,7 +14,6 @@ function App() {
         <Suspense fallback={<h1>Loading...</h1>}>
           <AboutUs />
           <Packages />
-          <Data />
         </Suspense>
       </div>
     </div>
