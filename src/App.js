@@ -4,8 +4,8 @@ import Loader from 'react-loader-spinner';
  
 
 function App() {
-  const AboutUs = React.lazy(() => import('./AboutUs'))
-  const Packages = React.lazy(() => import('./Packages'))
+  const AboutUs = React.lazy(() => import('./components/AboutUs'))
+  const Packages = React.lazy(() => import('./components/Packages'))
 
 
   return (
